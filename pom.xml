@@ -3,4 +3,66 @@
   <groupId>framework</groupId>
   <artifactId>framework</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  
+  
+  <dependencies>
+
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>4.0.9</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>4.0.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>4.0.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.14.3</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.11.0</version>
+		</dependency>
+
+	</dependencies>
+
+
+	<build>
+
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M4</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>XMLFiles/${xmlFiles}</suiteXmlFile>
+					</suiteXmlFiles>
+
+					<systemPropertyVariables>
+						<Browser>${Browser}</Browser>
+						<AppURL>${AppURL}</AppURL>
+					</systemPropertyVariables>
+				</configuration>
+			</plugin>
+		</plugins>
+
+
+	</build>
 </project>
