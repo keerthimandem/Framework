@@ -18,7 +18,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import pageFactory.BrowserFactory;
 import utilities.Utility;
 
-public class Base {
+public class BaseClass {
 	
 	public WebDriver driver;
 	public static ExtentReports report;
