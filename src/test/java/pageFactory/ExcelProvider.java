@@ -1,4 +1,4 @@
-package orangeHRM.factories;
+package pageFactory;
 
 import java.io.File;
 import java.io.FileInputStream;

@@ -1,4 +1,4 @@
-package orangeHRM.factories;
+package pageFactory;
 
 public class DataProviderFactory {
 
