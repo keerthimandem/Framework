@@ -16,6 +16,7 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import pageFactory.BrowserFactory;
+import pageFactory.DataProviderFactory;
 import utilities.Utility;
 
 public class BaseClass {
@@ -98,8 +99,8 @@ public class BaseClass {
 		System.out.println("Log:INFO- Setting up Browser and Application");
 		
 		
-	//	driver=BrowserFactory.getApplication(DataProviderFactory.getConfig().getValue("Browser"),
-		//		DataProviderFactory.getConfig().getValue("QAEnv"));
+	/*driver=BrowserFactory.getApplication(DataProviderFactory.getConfig().getValue("Browser"),
+			DataProviderFactory.getConfig().getValue("QAEnv"));*/
 	
 		driver=BrowserFactory.getApplication(browser,appurl);
 		

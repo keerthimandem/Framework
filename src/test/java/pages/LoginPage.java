@@ -4,12 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-import orangeHRM.helper.Utility;
+import utilities.Utility;
+
+
 
 public class LoginPage {
 
 	WebDriver driver;
-	
+	String URL="https://opensource-demo.orangehrmlive.com/";
 	public LoginPage(WebDriver ldriver)
 	{
 		this.driver=ldriver;
@@ -23,7 +25,7 @@ public class LoginPage {
 	
 	public void verifyUrlBeforeLogin()
 	{
-		Utility.verifyURLContains(driver, "demo");
+		Utility.verifyURL(driver,URL);
 	}
 	
 	
@@ -46,7 +48,8 @@ public class LoginPage {
 	
 	public void typePassword()
 	{
-		Utility.waitForWebElement(driver, password).sendKeys("admin123");
+	Utility.waitForWebElement(driver, password).sendKeys("admin123");
+	
 	}
 	
 	public void clickOnLoginButton()
