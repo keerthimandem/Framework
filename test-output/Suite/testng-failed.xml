@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)" parallel="classes">
+    <parameter name="AppURL" value="https://opensource-demo.orangehrmlive.com/"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="testcases.TC_002">
+        <methods>
+          <include name="setupReport"/>
+          <include name="tearDown"/>
+          <include name="tearDownReport"/>
+          <include name="verifyPage"/>
+          <include name="setUp"/>
+          <include name="loginToApplication"/>
+          <include name="logoutFromApplication"/>
+        </methods>
+      </class> <!-- testcases.TC_002 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
